@@ -1,4 +1,4 @@
-var sayi1=10;
+let sayi1=10;
 
 sayi1="Ahmet";
 
