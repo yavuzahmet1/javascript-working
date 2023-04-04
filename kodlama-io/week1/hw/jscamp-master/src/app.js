@@ -45,3 +45,19 @@ console.log(medium)
 console.log(high)
 console.log(veryHigh)
 console.log(veryMax)
+
+function someFunction([small1],number){
+    console.log(small1);
+}
+
+console.log("-----------")
+
+someFunction(population)
+
+let category={id:1, name:"icecek"}
+console.log(category.id)
+console.log(category["name"])
+
+let {id,name}=category
+console.log(id)
+console.log(name)
