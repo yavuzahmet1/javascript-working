@@ -27,8 +27,22 @@ function addToCart1(product){
 
 addToCart1(product1)
 
-let product2={productName:"Muz",unitPrice:100,quantity:21}
-let product3={productName:"Karpuz",unitPrice:107,quantity:6}
-product2=product3
-product2.productName="ERIK"
-console.log(product3.productName)
+let product10={productName:"Muz",unitPrice:100,quantity:21}
+let product20={productName:"Karpuz",unitPrice:107,quantity:6}
+product10=product20
+product10.productName="ERIK"
+console.log(product20.productName)//referans tiplidir çıktısı ERIK olur
+
+function addToCart4(x){
+
+    console.log(products)
+
+}
+
+let products=[
+    {productName:"Bilgisayar",unitPrice:107,quantity:6},
+    {productName:"Telefon",unitPrice:107,quantity:6},
+    {productName:"Beyaz Eşya",unitPrice:107,quantity:6}
+]
+
+addToCart4(products)
