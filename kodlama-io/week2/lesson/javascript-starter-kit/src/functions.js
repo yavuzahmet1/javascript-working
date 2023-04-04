@@ -46,3 +46,21 @@ let products=[
 ]
 
 addToCart4(products)
+
+function add(...numbers){
+    let total=0;
+    for (let index = 0; index < numbers.length; index++) {
+        //console.log(numbers[index])
+        total+=numbers[index]
+        
+    }
+    console.log(total)
+}
+
+add(30,43)
+add(30,43,54)
+add(30,43,33,100)
+
+let numbers=[33,41,2,3,66,876,9]
+console.log(...numbers)
+console.log(Math.max(...numbers))
