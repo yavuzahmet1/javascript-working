@@ -69,7 +69,7 @@ console.log(Math.min(...numbers))
 //let regions=["Akdeniz","İç Anadolu","Doğu Anadolu","Karadeniz"]
 //console.log(regions[1])
 
-let [akdeniz, icAnadolu, dogu, karadeniz,[akdenizSehirleri,icAnadoluSehirleri,doguSehirleri,karadenizSehirleri]] = [
+let [akdeniz, icAnadolu, dogu, karadeniz, [akdenizSehirleri, icAnadoluSehirleri, doguSehirleri, karadenizSehirleri]] = [
     "Akdeniz",
     { name: "İç Anadolu", population: "20M" },
     "Doğu Anadolu",
@@ -87,3 +87,11 @@ console.log(icAnadolu)
 console.log(icAnadolu.population)
 console.log(akdenizSehirleri)
 console.log(doguSehirleri)
+
+let productName, unitPrice, quantity
+let { productName: newProductName, unitPrice: newUnitPrice, quantity: newQuantity }
+    = { productName: "Kiraz", unitPrice: 100, quantity: 21 }
+
+console.log(newProductName)
+console.log(newUnitPrice)
+console.log(newQuantity)
