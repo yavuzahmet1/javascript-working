@@ -1,24 +1,28 @@
-console.log("deneme")
+function findPrime(...numbers) {
 
-function findPrime(...params) {
-    //let counter
-    for (let index = 0; index < params; index++) {
-        
-        console.log(index)
+    for (let i = 0; i < numbers.length; i++) {
+
+        if (numbers[i] < 2) {
+            console.log(numbers[i] + " is not prime number")
+
+        }
+
+        for (let t = 2; t < numbers[i]; t++) {
+
+            if (numbers[i] % t === 0) {
+                console.log(numbers[i] + " is not prime")
+                break;
+            } else {
+                console.log(numbers[i] + " is prime number")
+            }
+
+        }
+
+        console.log("*******")
+
     }
+
 }
 
-function add(...numbers) {
-
-    console.log(numbers[2])
-  /*  let total = 0;
-    for (let index = 0; index < numbers.length; index++) {
-
-        total += numbers[index]
-
-    }
-    console.log(total)*/
-}
-
-add(23,7,8)
-//findPrime(2,5,8,21,13)
+findPrime(0, 1, 23, 7, 8, 1)
+findPrime(3, 5)
