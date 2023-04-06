@@ -13,6 +13,7 @@ function addToCart(cart) {
 addToCart(cart)
 
 console.log(cart)
+
 //.map 
 cart.map(product => console.log(product.productName));
 
@@ -30,14 +31,6 @@ console.log("<ul>")
 let quantityOver5=cart.filter(product=>product.quantity>5&&product.unitPrice>5000)
 console.log(quantityOver5)
 
-
-
-/*let number = 10
-
-function totalNumber(num) {
-    num += 1
-    console.log(num)
-}
-totalNumber(number)
-console.log(number)
-console.log(totalNumber(number))*/
+//.reduce
+let total=cart.reduce((acc,product)=>acc+product.unitPrice,0)
+console.log(total)//ürünün birim fiyatını topluyor ilk 0 sonrası topluyor
