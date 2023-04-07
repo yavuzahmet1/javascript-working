@@ -3,7 +3,7 @@ let cart = [
     { id: 2, productName: "Cam", quantity: 7, unitPrice: 88000 },
     { id: 3, productName: "Beyaz Eşya", quantity: 5, unitPrice: 90000 },
     { id: 4, productName: "Ev Aleti", quantity: 2, unitPrice: 4443 },
-    { id: 4, productName: "Aksesuar", quantity: 9, unitPrice: 6510 }
+    { id: 4, productName: "Aksesuar", quantity: 9, unitPrice: 651000 }
 ]
 
 function addToCart(cart) {
