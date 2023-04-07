@@ -1,8 +1,8 @@
 export default class UserService{
 
-add(){
+add(user){
 
-    console.log("Kullanıcı eklendi !")
+    console.log("Kullanıcı eklendi ! : "+user)
 }
 
 list(){
@@ -13,7 +13,7 @@ list(){
 
 getById(id){
 
-    console.log("Kullanıcı eklendi !")
+    console.log("Kullanıcı detayı getirildi !")
 
 }
 
