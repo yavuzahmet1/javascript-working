@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 class="cart-title- h1" id="title">Todo App 2</h3>
+    </div>
+    <ul id="task-list">
+      <li class="task">Görev 1</li>
+      <li class="task">Görev 2</li>
+      <li class="task">Görev 3</li>
+      <li class="task">Görev 4</li>
+    </ul>
+    <script>
+      let result;
+      result = document.getElementsByClassName("task")[0];
+      result = document.getElementsByClassName("task")[1];
+      taskList = document.getElementsByName("task");
+
+      for (let i = 0; i < taskList.length; i++) {
+        console.log(taskList[i]);
+      }
+
+      for(let task of taskList){
+        console.log(task);
+      }
+
+      console.log(result);
+      task.style.color="red"
+      //console.log(taskList[1]);
+    </script>
+  </body>
+</html>
