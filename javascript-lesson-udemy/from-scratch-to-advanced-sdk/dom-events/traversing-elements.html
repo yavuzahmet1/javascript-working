@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">Todo App 2</div>
+          </div>
+          <div class="card mt-3">
+            <ul id="task-list" class="list-group list-group-flush">
+              <li class="task list-group-item">
+                <div class="form-check">
+                  <input type="checkbox" id="1" class="form-check-input" />
+                  <label for="1" class="form-check-label">Görev 1</label>
+                </div>
+              </li>
+              <li class="task list-group-item">
+                <div class="form-check">
+                  <input type="checkbox" id="1" class="form-check-input" />
+                  <label for="2" class="form-check-label">Görev 2</label>
+                </div>
+              </li>
+              <li class="task list-group-item">
+                <div class="form-check">
+                  <input type="checkbox" id="1" class="form-check-input" />
+                  <label for="3" class="form-check-label">Görev 3</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-header">
+      <h3 class="cart-title h1" id="title">Todo App 2</h3>
+    </div>
+
+    <script>
+      let result;
+      ul = result = document.getElementById("task-list");
+      result = ul.children;
+      result = ul.children[0];
+      result = ul.children[1];
+      result = ul.firstElemetChild;
+      result = ul.lastElementChild;
+
+      result = document.getElementById("title").parentElement;
+
+      result =
+        document.querySelector(".task").nextElementSibling.nextElementSibling;
+
+      console.log(result);
+    </script>
+  </body>
+</html>
