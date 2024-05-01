@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">Todo App</div>
+          </div>
+
+          <div class="card mt-3">
+            <ul id="task-list" class="list-group list-group-flush">
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      "use strict";
+      
+      let sonuc;
+      
+
+      let gorevListesi = [
+          {"id": 1, "gorevAdi": "Görev 1"},
+          {"id": 2, "gorevAdi": "Görev 2"},
+          {"id": 3, "gorevAdi": "Görev 3"},
+          {"id": 4, "gorevAdi": "Görev 4"},
+          {"id": 5, "gorevAdi": "Görev 5"},
+      ];
+
+      let ul = document.getElementById("task-list");
+
+      for(let gorev of gorevListesi) {
+
+          let li = `
+              <li class="task list-group-item">
+                  <div class="form-check">
+                      <input type="checkbox" id="${gorev.id}" class="form-check-input">
+                      <label for="${gorev.id}" class="form-check-label">${gorev.gorevAdi}</label>
+                  </div>
+              </li>
+          `;
+          
+          ul.insertAdjacentHTML("beforeend", li);            
+
+      }
+
+    
+  </script>
+  </body>
+</html>
