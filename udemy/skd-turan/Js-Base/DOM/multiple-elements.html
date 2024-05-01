@@ -11,28 +11,28 @@
       <h3 class="card-title h2" id="saple">id is sample</h3>
     </div>
     <ul id="task-list">
-      <li>görev 1</li>
-      <li>görev 2</li>
-      <li>görev 3</li>
+      <li class="task">görev 1</li>
+      <li class="task">görev 2</li>
+      <li class="task">görev 3</li>
     </ul>
     <script>
       let result;
-      result = document.getElementById("title");
-      result = document.getElementById("title").id;
-      result = document.getElementById("title").className;
-      result = document.getElementById("title").classList;
-      //result=document.getElementById("title").classList[0]
-      document.getElementById("title").style.fontSize = "30px";
-      document.getElementById("title").style.color = "blue";
-      document.getElementById("title").innerText = "Ahmet Todo App";
-      document.getElementById("title").innerHTML = "<p> Toto App reversed";
+      result = document.getElementsByClassName("task")[0];
+      result = document.getElementsByClassName("task")[2];
 
-      result = document.querySelector("#saple");
-      result = document.querySelector(".card-header");
-      result = document.querySelector("div");
-      result = document.querySelector("li");
-      result = document.querySelector("li:last-child");
-      console.log(result);
+      taskList = document.getElementsByClassName("task");
+
+      for (let i = 0; i < taskList.length; i++) {
+        console.log(taskList[i]);
+      }
+
+      for (let task of taskList) {
+        console.log(task);
+        task.style.color = "red";
+        task.style.fontSize = "50px";
+        task.innerText="Item"
+      }
+      //console.log(result);
     </script>
   </body>
 </html>
