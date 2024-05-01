@@ -17,22 +17,12 @@
     </ul>
     <script>
       let result;
-      result = document.getElementsByClassName("task")[0];
-      result = document.getElementsByClassName("task")[2];
 
-      taskList = document.getElementsByClassName("task");
+      ul = document.getElementById("task-list");
+      result = ul.children;
+      result = ul.children[2];
 
-      for (let i = 0; i < taskList.length; i++) {
-        console.log(taskList[i]);
-      }
-
-      for (let task of taskList) {
-        console.log(task);
-        task.style.color = "red";
-        task.style.fontSize = "50px";
-        task.innerText = "Item";
-      }
-      //console.log(result);
+      console.log(result);
     </script>
   </body>
 </html>
