@@ -14,34 +14,29 @@
           </div>
 
           <div class="card mt-3">
-            <ul id="task-list" class="list-group list-group-flush">
-              
-            </ul>
+            <ul id="task-list" class="list-group list-group-flush"></ul>
           </div>
         </div>
       </div>
     </div>
 
     <script>
-
       "use strict";
-      
+
       let sonuc;
-      
 
       let gorevListesi = [
-          {"id": 1, "gorevAdi": "Görev 1"},
-          {"id": 2, "gorevAdi": "Görev 2"},
-          {"id": 3, "gorevAdi": "Görev 3"},
-          {"id": 4, "gorevAdi": "Görev 4"},
-          {"id": 5, "gorevAdi": "Görev 5"},
+        { id: 1, gorevAdi: "Görev 1" },
+        { id: 2, gorevAdi: "Görev 2" },
+        { id: 3, gorevAdi: "Görev 3" },
+        { id: 4, gorevAdi: "Görev 4" },
+        { id: 5, gorevAdi: "Görev 5" },
       ];
 
       let ul = document.getElementById("task-list");
 
-      for(let gorev of gorevListesi) {
-
-          let li = `
+      for (let gorev of gorevListesi) {
+        let li = `
               <li class="task list-group-item">
                   <div class="form-check">
                       <input type="checkbox" id="${gorev.id}" class="form-check-input">
@@ -49,12 +44,9 @@
                   </div>
               </li>
           `;
-          
-          ul.insertAdjacentHTML("beforeend", li);            
 
+        ul.insertAdjacentHTML("beforeend", li);
       }
-
-    
-  </script>
+    </script>
   </body>
 </html>
