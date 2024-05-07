@@ -1,3 +1,4 @@
 console.log("merhaba!!");
-document.body.innerHTML="Merhaba"
-document.body.innerHTML="JS"
+let a= document.body.innerHTML="Merhaba"
+//let b=document.body.innerHTML="JS"
+
