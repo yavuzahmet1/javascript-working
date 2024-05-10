@@ -1,5 +1,5 @@
 export default class UserService {
-  add(id,firstName,user) {
+  add(user) {
     console.log("User is added : " + user);
   }
   list() {
@@ -7,7 +7,7 @@ export default class UserService {
   }
 
   getById(id) {
-    console.log("Fetched with user ID");
+    console.log("Fetched with user ID" +id);
   }
 
 }
