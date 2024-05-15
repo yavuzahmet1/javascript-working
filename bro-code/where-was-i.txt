@@ -1,1 +1,1 @@
-25.21 aritmetic operators
+01.01.46 math object
