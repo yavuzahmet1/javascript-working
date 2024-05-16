@@ -1,0 +1,12 @@
+body {
+  font-family: verdana;
+  text-align: center;
+}
+#btnRandom {
+  font-size: 3em;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+.mylabels {
+  font-size: 3em;
+}
