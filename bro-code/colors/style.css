@@ -1,13 +1,3 @@
-body{
-    background-color: slategray;
-}
-p1{
-    color: tomato;
-}
-p2{
-    color: rgb(102, 222, 255);
-}
-
-p3{
-    color: #59ff59;
+#h1{
+    font-family: Tahoma;
 }
