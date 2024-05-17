@@ -8,11 +8,11 @@ h1 {
   border: 1px solid red;
   border-radius: 20px;
 }
-p{
-    border-bottom: 3px solid red;
-    border-top: 3px solid yellow;
-    border-left: 3px dotted black;
-    border-right: 3px dotted green;
+p {
+  border-bottom: 3px solid red;
+  border-top: 3px solid yellow;
+  border-left: 3px dotted black;
+  border-right: 3px dotted green;
 
-    border-radius: 10px;
+  border-radius: 10px;
 }
