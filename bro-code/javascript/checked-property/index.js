@@ -25,7 +25,7 @@ mySubmit.onclick = function () {
     paymentResult.textContent = "You are paying with American Express";
   } else if (payPalBtn.checked) {
     paymentResult.textContent = "You are paying with Pay Pal";
-  }else{
-    paymentResult.textContent="You must payment checked"
+  } else {
+    paymentResult.textContent = "You must payment checked";
   }
 };
