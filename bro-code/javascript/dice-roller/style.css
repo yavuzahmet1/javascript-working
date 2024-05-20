@@ -1,0 +1,28 @@
+#container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+button {
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: olive;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: darkslategrey;
+}
+button:active {
+  background-color: bisque;
+}
+input {
+  font-size: 1em;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+}

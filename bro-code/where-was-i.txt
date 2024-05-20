@@ -1,2 +1,2 @@
-1.42.00->js-> Ternary operator
+3.44.00->js-> Ternary operator
 02.00.00->css and html bro code
