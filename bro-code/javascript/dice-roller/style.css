@@ -26,3 +26,10 @@ input {
   text-align: center;
   font-weight: bold;
 }
+#diceImages{
+  margin: 25px;
+}
+#diceImages img{
+  width: 100px;
+  margin:5px ;
+}
