@@ -1,5 +1,4 @@
-console.log(location.hostname)
-console.log(location.host)
+
 function rollDice() {
   const numOfDice = document.getElementById("numOfDice").value;
   const diceResult = document.getElementById("diceResult");
