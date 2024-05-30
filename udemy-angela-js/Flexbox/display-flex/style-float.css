@@ -1,0 +1,17 @@
+div {
+  display: inline-block;
+  background-color: aqua;
+}
+
+.one {
+  float: left;
+  width: 25%;
+}
+.two {
+  float: left;
+  width: 25%;
+}
+.three {
+  float: left;
+  width: 40%;
+}

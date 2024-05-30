@@ -1,0 +1,19 @@
+div {
+  display: inline-block;
+  background-color: aqua;
+}
+
+.one {
+  position: absolute;
+  width: 25%;
+}
+.two {
+  position: absolute;
+  left: 27.25%;
+  width: 25%;
+}
+.three {
+  position: absolute;
+  left: 53%;
+  width: 40%;
+}
