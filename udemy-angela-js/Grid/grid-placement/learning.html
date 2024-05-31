@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Placement</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+      }
+      .item {
+        display: flex;
+        background-color: aqua;
+        font-size: 10rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        justify-content: center;
+      }
+      .happy {
+        background-color: bisque;
+        grid-column: span 2;
+      }
+      .sad {
+        background-color: blueviolet;
+        grid-row: span 2;
+      }
+      .love {
+        background-color: cadetblue;
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item happy">😊</div>
+      <div class="item sad">😥</div>
+      <div class="item love">😍</div>
+    </div>
+  </body>
+</html>
