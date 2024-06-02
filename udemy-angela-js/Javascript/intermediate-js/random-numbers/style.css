@@ -1,0 +1,17 @@
+.container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  display: flexbox;
+  width: 100px;
+}
+.a{
+    justify-content: center;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+
+body{
+    justify-content: center;
+}
