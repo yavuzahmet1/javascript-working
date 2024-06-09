@@ -7,20 +7,7 @@
   </head>
   <body>
     <p>Youtube Subscribe button</p>
-    <button
-      onclick="
-   const buttonElement = document.querySelector('js-subscribe-button');
-
-   if(buttonElement.innerHTML==='Subscribe'){
-    buttonElement.innerHTML='Subscribed';
-   }else{
-    buttonElement.innerHTML='Subscribe';
-   }
-    "
-      class="js-subscribe-button"
-    >
-      Subscribe
-    </button>
+    <button class="js-subscribe-button" onclick="subscribe()">Subscribe</button>
 
     <p>Rock Paper Scissors</p>
 
@@ -29,9 +16,14 @@
     <p>Amazon Shipping Calculator</p>
     <p>Order under $40=+$10 shipping.</p>
     <p>Orders over $40 = FREE shipping.</p>
-    <input placeholder="Cost of order" />
-    <button>Calculate</button>
-    <label class="result"></label><br /><br />
+    <input
+      class="js-cost-input"
+      placeholder="Cost of order"
+      onkeydown="handleCostCalculate(event)"
+    />
+    <button class="buttonCalculate" onclick="calculate()">Calculate</button>
+    <p class="result"></p>
+    <br /><br />
 
     <a href="">CSS version of these projects</a>
     <script src="dom.project.js"></script>
