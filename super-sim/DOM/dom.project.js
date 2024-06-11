@@ -3,8 +3,12 @@ function subscribe() {
 
   if (buttonElement.innerText === "Subscribe") {
     buttonElement.innerText = "Subscribed";
+    buttonElement.classList.add("is-subscribed");
+    buttonElement.classList.remove("is-subscribe");
   } else {
     buttonElement.innerText = "Subscribe";
+    buttonElement.classList.remove("is-subscribed");
+    buttonElement.classList.add("is-subscribe");
   }
 }
 

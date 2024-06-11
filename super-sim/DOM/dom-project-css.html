@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Project CSS</title>
+    <style>
+      .subscribe-button {
+        border: none;
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+      .is-subscribed {
+        background-color: gray;
+        color: black;
+      }
+      .is-subscribe {
+        background-color: aqua;
+        color: black;
+      }
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif, "Arial Narrow",
+          Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Youtube Subscribe button</p>
+    <button class="js-subscribe-button subscribe-button" onclick="subscribe()">
+      Subscribe
+    </button>
+
+    <p>Rock Paper Scissors</p>
+
+    <a href="">Click here</a>
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Order under $40=+$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+    <input
+      class="js-cost-input"
+      placeholder="Cost of order"
+      onkeydown="handleCostCalculate(event)"
+    />
+    <button class="buttonCalculate" onclick="calculate()">Calculate</button>
+    <p class="result"></p>
+    <br /><br />
+
+    <a href="">CSS version of these projects</a>
+    <script src="dom.project.js"></script>
+  </body>
+</html>
