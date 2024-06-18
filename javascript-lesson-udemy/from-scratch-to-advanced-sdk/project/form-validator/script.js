@@ -43,11 +43,41 @@ function checkRequired(inputs) {
     succes(inputs);
   }*/
 }
+function checkLength(input, min, max) {
+  if (input.value.length < min) {
+    error(input, `The ${input.id} must be at least ${min} characters`);
+  } else if (input.value.length > max) {
+    error(input, `The ${input.id} must be at most ${max} characters`);
+  } else {
+    succes(input);
+  }
+}
+
+function checkPassword(input1, input2) {
+  if (input1.value !== input2.value) {
+    error(input2, "passwords do not match");
+  }
+}
+
+function checkPhone(input) {
+  const regexPhone =
+    /^(05)[0-9][0-9][\s]([0-9]){3}[\s]([0-9]){2}[\s]([0-9]){2}/;
+
+  if (!regexPhone.test(Number(input))) {
+    error(input, `${input.id} is not valid format. Exemple: 5_________`);
+  }
+
+  // return regexPhone.test(Number(input));
+}
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   checkRequired([username, email, phone, password, repassword]);
   validateEmail(email);
+  checkLength(username, 3, 20);
+  checkLength(password, 7, 15);
+  checkPassword(password, repassword);
+  checkPhone(phone);
   /*checkRequired(username);
   checkRequired(email);
   checkRequired(phone);
