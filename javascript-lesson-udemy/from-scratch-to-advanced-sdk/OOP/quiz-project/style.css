@@ -65,3 +65,18 @@
     background: #f8d7da;
 }
 
+.quiz_box .option_list .option.disabled{
+    pointer-events: none;
+}
+
+.quiz_box .next_btn{
+    opacity: 0;
+    pointer-events: none;
+
+    transform: scale(0.9);
+    transition: all 1s ease;
+}
+.quiz_box .next_btn.show{
+    opacity: 1;
+    pointer-events: auto;
+}
