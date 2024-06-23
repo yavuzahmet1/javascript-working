@@ -39,7 +39,9 @@
 
       console.log(resultMap);
 
-      const resultFiltered = products.filter((product) => product.price < 10000).map(pr=>pr.productName);
+      const resultFiltered = products
+        .filter((product) => product.price < 10000)
+        .map((pr) => pr.productName);
       console.log(resultFiltered);
     </script>
   </body>
