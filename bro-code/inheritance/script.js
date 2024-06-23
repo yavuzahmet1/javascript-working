@@ -17,7 +17,7 @@ class Fish extends Animal {
   name = "Fish";
 }
 class Hawk extends Animal {
-  name = "Hawk";
+  name = "Hawk"; 
 }
 
 const rabbit = new Rabbit();
