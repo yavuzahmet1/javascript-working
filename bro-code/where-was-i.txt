@@ -1,2 +1,2 @@
-6.00.00->js-> Ternary operator
+6.01.00->js-> Destructuring
 02.00.00->css and html bro code
