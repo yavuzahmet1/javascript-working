@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia Page</title>
+  </head>
+  <body>
+    <h1>Multimedia Examples</h1>
+
+    <h2>Map</h2>
+    <img src="./coords_attr.png" alt="coords attr" width="500" /><br />
+    <img
+      src="./images/worldMap.gif"
+      alt="World Map"
+      usemap="#map"
+      width="400"
+      height="300"
+    />
+
+    <map name="map">
+      <area
+        shape="rect"
+        coords="100,100,200,200"
+        href="https://www.example.com/location1"
+        alt="Location 1"
+      />
+      <area
+        shape="circle"
+        coords="300,150,50"
+        href="https://www.example.com/location2"
+        alt="Location 2"
+      />
+    </map>
+    <br />
+    <h2>Video</h2>
+    <iframe
+      style="justify-content: left"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/lfmg-EJ8gm4?si=Au1lYA-hfvN9Ckga"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <video width="320" height="240" controls>
+      <source
+        src="https://youtu.be/lfmg-EJ8gm4?feature=shared"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="./audio1719796772.m4a" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+    <br />
+  </body>
+</html>
