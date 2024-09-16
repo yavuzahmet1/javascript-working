@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 id="title" class="card-title example">Todo App 2</h3>
+    </div>
+    <script>
+      let result;
+      result = document.getElementById("title");
+      result = document.getElementById("title").id;
+      result = document.getElementById("title").className;
+      result = document.getElementById("title").classList;
+      document.getElementById("title").style.fontSize = "30px";
+      document.getElementById("title").style.color = "green";
+      document.getElementById("title").innerText = "Exchange";
+      document.getElementById("title").innerHTML = "<p>Exchange paragraph</p>";
+      result = document.querySelector("#title");
+      result = document.querySelector(".card-header");
+      result = document.querySelector("div");
+      console.log(result);
+    </script>
+  </body>
+</html>
