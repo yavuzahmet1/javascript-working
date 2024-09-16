@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 id="title" class="card-title example">Todo App 2</h3>
+    </div>
+    <ul id="task-list">
+      <li class="duty">Duty-1</li>
+      <li class="duty">Duty-2</li>
+      <li class="duty">Duty-3</li>
+    </ul>
+    <script>
+      let result;
+
+      ul = document.getElementById("task-list");
+      result = ul.children;
+      result = ul.children[0];
+      result = ul.firstElementChild;
+      result = ul.lastElementChild;
+      console.log(result);
+    </script>
+  </body>
+</html>
