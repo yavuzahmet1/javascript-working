@@ -44,6 +44,7 @@
         { id: 2, gorevAdi: "Görev 2" },
         { id: 3, gorevAdi: "Görev 3" },
         { id: 4, gorevAdi: "Görev 4" },
+        { id: 5, gorevAdi: "Görev 5" },
       ];
 
       let ul = document.getElementById("task-list");
@@ -62,6 +63,17 @@
 
         ul.insertAdjacentHTML("beforeend", li);
       }
+      // document.querySelector("#task-list").children[0].remove();
+      // document.querySelector("#task-list").children[2].remove();
+      document.querySelector("#task-list").removeAttribute("class");
+      document.querySelector("#task-list").children[2].removeAttribute("class");
+      document
+        .querySelector("#task-list")
+        .children[3].classList.add("bg-danger");
+      let result = document
+        .querySelector("#task-list")
+        .children[1].getAttribute("class");
+      console.log(result);
     </script>
   </body>
 </html>
