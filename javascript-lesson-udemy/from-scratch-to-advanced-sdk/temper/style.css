@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    
+}
+.container{
+    
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 1px black;
+    width: 300px;
+    margin-left: 30%;
+    
+}
+button{
+    margin-top: 10px;
+}
