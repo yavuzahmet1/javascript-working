@@ -1,0 +1,21 @@
+#container{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+button{
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(32, 32, 147);
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    background-color:rgb(10, 10, 161);
+    cursor: pointer;
+}
+button:active{
+    background-color: aquamarine;
+}
