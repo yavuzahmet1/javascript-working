@@ -1,0 +1,48 @@
+#add-btn {
+    background-color: seagreen;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 50px;
+    height: 46px;
+}
+
+#clear-btn {
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 60px;
+    height: 46px;
+}
+
+#input-box {
+    border-radius: 10px;
+    border: 3px solid orangered;
+    width: 300px;
+    height: 46px;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+/*body {
+    
+    text-align: center;
+    justify-content: center;
+    background-color: gray;
+}*/
+
+.container {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#add-btn:hover {
+    background: yellowgreen;
+}
+
+#clear-btn:hover {
+    background: salmon;
+}

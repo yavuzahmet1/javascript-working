@@ -1,23 +1,29 @@
-const hourHand=document.querySelector('[data-hour-hand]');
-const minuteHand=document.querySelector("[data-minute-hand]");
-const secondHand=document.querySelector("[data-second-hand]");
+const hourHand = document.querySelector('[data-hour-hand]');
+const minuteHand = document.querySelector("[data-minute-hand]");
+const secondHand = document.querySelector("[data-second-hand]");
 
-setInterval(setClock,1000)
+setInterval(setClock, 1000)
 
-function setClock(){
-    const currentDate=new Date();
-    const secondsRatio=currentDate.getSeconds()/60
-    const minutesRatio=(secondsRatio+currentDate.getMinutes())/60
-    const hoursRatio=(minutesRatio+currentDate.getHours())/120
+function setClock() {
+    const currentDate = new Date();
+    const secondsRatio = currentDate.getSeconds() / 60
+    const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+    const hoursRatio = (minutesRatio + currentDate.getHours()) / 120
 
-    setRotation(secondHand,secondsRatio)
-    setRotation(minuteHand,minutesRatio)
-    setRotation(hourHand,hoursRatio)
+    // setRotation(secondHand, secondsRatio)
+    // setRotation(minuteHand, minutesRatio)
+    // setRotation(hourHand, hoursRatio)
+    console.log(secondHand)
+    console.log(minuteHand)
+    console.log(hourHand)
+    console.log(secondsRatio)
+    console.log(minutesRatio)
+    console.log(hoursRatio)
 }
 
-function setRotation(element,rotationRatio){
-element.style.setProperty('--rotation',rotationRatio*360)
-}
+// function setRotation(element, rotationRatio) {
+//     element.style.setProperty('--rotation', rotationRatio * 360)
+// }
 setClock()
 
 
@@ -25,8 +31,8 @@ setClock()
 // const aralik = setInterval(() => {
 //     sayac++;
 //     console.log(`Sayaç: ${sayac}`);
-    
-//     // Belirli bir şart sağlandığında durdurma
+
+//     //     // Belirli bir şart sağlandığında durdurma
 //     if (sayac === 5) {
 //         clearInterval(aralik);
 //     }
