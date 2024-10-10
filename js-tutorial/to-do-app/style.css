@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 70%;
+    min-height: 100hv;
+    margin: 0 auto;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formToDo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 32px;
+    background-color: antiquewhite;
+}
+
+.header {
+    font-size: 2.5rem;
+}
+
+.divToDo {
+    display: flex;
+    margin-top: 16px;
+}
+
+.inputToDo {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+}
+
+.submitBtn {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.btnSubmit:hover {
+    background-color: rgb(208, 255, 240);
+}
+
+.containerToDos {
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: antiquewhite;
+}
+
+.toDos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftToDo {
+    display: flex;
+    align-items: center;
+}
+
+.textToDo,
+.editToDo {
+    margin-left: 8px;
+}
+
+.checkBoxToDo:checked~.textToDo {
+    text-decoration: line-through;
+    color: gray;
+}
