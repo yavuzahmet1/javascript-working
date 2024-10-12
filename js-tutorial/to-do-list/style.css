@@ -46,3 +46,11 @@
 #clear-btn:hover {
     background: salmon;
 }
+
+.paragraph-styling {
+    margin: 15px;
+    cursor: pointer;
+    font-size: 35px;
+    color: purple;
+    text-transform: uppercase;
+}
