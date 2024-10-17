@@ -1,0 +1,36 @@
+* {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+    border: 1px solid black;
+    width: 70%;
+    background-color: azure;
+
+}
+
+#taskList {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.listsStyling {
+    list-style: none;
+    font-family: "Caveat", cursive;
+
+}
